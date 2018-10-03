@@ -11,5 +11,7 @@ gulp.task('index', function () {
  */
 gulp.task('deploy', ['index'], function () {
   return gulp.src("./dist/**/*")
-    .pipe(deploy())
+    .pipe(deploy({
+		cacheDir: '.publish-gh-pages'
+	}))
 });
