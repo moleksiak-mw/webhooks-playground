@@ -1,3 +1,4 @@
 node_modules
 dist
 publish-gh-pages
+deploy
